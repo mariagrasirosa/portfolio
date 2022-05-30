@@ -53,26 +53,28 @@ nav ul li a {
     text-transform: capitalize;
 }
 
-nav ul li a:hover {
-    color: var(--color-constrast);
-    transition: .4s;
-}
-
-.btn {
+#language li {
     background-color: var(--color-constrast);
     color: var(--color-light);
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 10px 25px;
-    border-radius: 20px;
-    transition: transform .4s;
-
+    padding: 13px 15px;
+    border-radius: 30px;
+    transition: .4s;
+    font-size: 0.75rem;
+}
+#language li:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-constrast);
+    cursor: pointer;
+}
+nav ul li a:hover {
+    color: var(--color-constrast);
+    transition: .4s;
 }
 
-.btn:hover {
-    transform: scale(1.2);
-}
+
 
 .content {
     position: absolute;
@@ -97,6 +99,25 @@ h4{
     color: var(--color-light);
     letter-spacing: 2px;
     font-size: 20px;
+}
+
+.btn {
+    background-color: var(--color-constrast);
+    color: var(--color-light);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 100px;
+    border-radius: 20px;
+    /* transition: transform .4s; */
+
+}
+
+.btn:hover {
+    /* transform: scale(2.2);  */
+    background-color: transparent;
+    border: 2px solid var(--color-constrast);
+    cursor: pointer;
 }
 
 .newslatter form {
@@ -224,7 +245,7 @@ button:hover {
 }
 
 .card {
-   height: 365px;
+   height: 300px;
    width: 335px;
    padding: 20px 35px;
     background: #191919;
@@ -249,7 +270,8 @@ h5{
     margin-bottom: 15px;
 }
 
-.pra p {
+.pra ul {
+    list-style: none;
     color:#fcfc ;
     font-size: 16px;
     line-height: 27px;
